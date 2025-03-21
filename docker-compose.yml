@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  itrust-recons:
+    container_name: itrust-recons
+    build: .
+    ports:
+      - "5786:5786"  # Maps container port 5786 to host port 5786
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_RUN_HOST=0.0.0.0
+      - FLASK_RUN_PORT=5786
+    restart: always
