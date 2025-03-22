@@ -29,6 +29,13 @@ FILE_ENGINES = {
 @app.route("/reconcile", methods=["POST"])
 def reconcile():
     logging.info("Received request to reconcile transactions.")
+    logging.info(f"Request method: {request.method}") # Log request method for debugging
+    logging.info(f"Request headers: {request.headers}") # Log request headers for debugging
+    logging.info(f"Request content type: {request.content_type}") # Log request content type for debugging
+    logging.info(f"Request content length: {request.content_length}") # Log request content length for debugging
+    logging.info(f"Request: {request}") # Log request object for debugging
+    logging.info(f"Request data: {request.form.to_dict()}") # Log request data for debugging
+    logging.info(f"Request files: {request.files.to_dict()}") # Log request files for debugging
     
     # Receive file
     file = request.files.get("file")

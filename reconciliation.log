@@ -3,3 +3,104 @@
 2025-03-21 21:07:02,065 - INFO - Starting Flask app.
 2025-03-21 21:07:02,092 - WARNING -  * Debugger is active!
 2025-03-21 21:07:02,099 - INFO -  * Debugger PIN: 813-101-750
+2025-03-22 12:11:27,248 - INFO - Starting Flask app.
+2025-03-22 12:11:27,535 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.102.23:5000
+2025-03-22 12:11:27,535 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-22 12:11:27,546 - INFO -  * Restarting with stat
+2025-03-22 12:11:29,253 - INFO - Starting Flask app.
+2025-03-22 12:11:29,276 - WARNING -  * Debugger is active!
+2025-03-22 12:11:29,285 - INFO -  * Debugger PIN: 813-101-750
+2025-03-22 12:13:19,175 - INFO - Received request to reconcile transactions.
+2025-03-22 12:13:19,181 - INFO - Starting reconciliation process.
+2025-03-22 12:13:19,189 - INFO - File uploaded and saved as C:\Users\ERICK~1.MAK\AppData\Local\Temp\tmp4h2kw_ge\uploaded_transactions_71f595af-aab9-4600-adee-c864beda31d4BF_francis.samkyi41742470057813.xlsx.
+2025-03-22 12:13:21,034 - INFO - Excel file loaded into a DataFrame.
+2025-03-22 12:13:21,036 - INFO - Filtered Excel data to include only required columns.
+2025-03-22 12:13:21,037 - INFO - Loaded DB data into a DataFrame.
+2025-03-22 12:13:21,047 - INFO - Merged Excel and DB data.
+2025-03-22 12:13:21,048 - INFO - Identified 0 mismatches based on amount.
+2025-03-22 12:13:21,050 - INFO - Separated unmatched records: 11 in Excel, 1 in DB.
+2025-03-22 12:13:21,052 - INFO - Concatenated results into final reconciliation DataFrame.
+2025-03-22 12:13:21,064 - INFO - Reconciled data: [{'id': 298074589672, 'reference': 'IGF02002520011202503130003', 'amount_excel': 10000.0, 'amount_db': 10000.0, '_merge': 'both'}]
+2025-03-22 12:13:21,064 - INFO - Unreconciled data: [{'id': 298927584062, 'reference': 'IGF02001516011202503050008', 'amount_excel': 10000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 582318611839, 'reference': 'IGF02003511011202503070004', 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 590874450638, 'reference': '02002342890', 'amount_excel': 1000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 790216143373, 'reference': 'IGF02003349011202503050003', 'amount_excel': 900000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 790227039823, 'reference': 'IGF02001516011202503060004', 'amount_excel': 10000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 857831996851, 'reference': 'IGF0000004003832011202503130006', 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 882358885619, 'reference': 'IGF02003511011202502280010', 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 25482457859069, 'reference': 'IGF02003750011202503130007', 'amount_excel': 50000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 25557856503326, 'reference': 'IGF02003511011202503140011', 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 25702031464030, 'reference': 'IGF0000004003832011202503130005', 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 25857869021116, 'reference': 'IGF02001516011202503140024', 'amount_excel': 10000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'id': 2, 'reference': 'XYZ456', 'amount_excel': nan, 'amount_db': 200.0, 'Mismatch Reason': 'Only in DB'}]
+2025-03-22 12:13:21,064 - INFO - Sending reconciliation data as JSON response.
+2025-03-22 12:13:21,066 - INFO - 127.0.0.1 - - [22/Mar/2025 12:13:21] "POST /reconcile HTTP/1.1" 200 -
+2025-03-22 12:40:18,615 - INFO -  * Detected change in 'D:\\reconciliations\\app.py', reloading
+2025-03-22 12:40:18,899 - INFO -  * Restarting with stat
+2025-03-22 12:40:20,755 - INFO - Starting Flask app.
+2025-03-22 12:40:20,779 - WARNING -  * Debugger is active!
+2025-03-22 12:40:20,786 - INFO -  * Debugger PIN: 813-101-750
+2025-03-22 12:40:49,607 - INFO - Received request to reconcile transactions.
+2025-03-22 12:40:49,608 - INFO - Request data: {'db_data': '[\n    {\n        "id": 298074589672,\n        "reference": "IGF02002520011202503130003",\n        "amount": 10000.00\n    },\n    {\n        "id": 2,\n        "reference": "XYZ456",\n        "amount": 200.00\n    }\n]\n'}
+2025-03-22 12:40:49,608 - INFO - Starting reconciliation process.
+2025-03-22 12:40:49,616 - INFO - File uploaded and saved as C:\Users\ERICK~1.MAK\AppData\Local\Temp\tmp6bofg_hx\uploaded_transactions_03f55721-2c57-46a7-a45b-dce64c4ebc56BF_francis.samkyi41742470057813.xlsx.
+2025-03-22 12:40:50,505 - INFO - Excel file loaded into a DataFrame.
+2025-03-22 12:40:50,510 - INFO - Filtered Excel data to include only required columns.
+2025-03-22 12:40:50,510 - INFO - Loaded DB data into a DataFrame.
+2025-03-22 12:40:50,526 - INFO - Merged Excel and DB data.
+2025-03-22 12:40:50,528 - INFO - Identified 0 mismatches based on amount.
+2025-03-22 12:40:50,530 - INFO - Separated unmatched records: 11 in Excel, 1 in DB.
+2025-03-22 12:40:50,532 - INFO - Concatenated results into final reconciliation DataFrame.
+2025-03-22 12:40:50,537 - INFO - Reconciled data: [{'reference': 'IGF02002520011202503130003', 'id': 298074589672, 'amount_excel': 10000.0, 'amount_db': 10000.0, '_merge': 'both'}]
+2025-03-22 12:40:50,537 - INFO - Unreconciled data: [{'reference': 'IGF02001516011202503050008', 'id': 298927584062, 'amount_excel': 10000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003511011202503070004', 'id': 582318611839, 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': '02002342890', 'id': 590874450638, 'amount_excel': 1000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003349011202503050003', 'id': 790216143373, 'amount_excel': 900000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02001516011202503060004', 'id': 790227039823, 'amount_excel': 10000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF0000004003832011202503130006', 'id': 857831996851, 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003511011202502280010', 'id': 882358885619, 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003750011202503130007', 'id': 25482457859069, 'amount_excel': 50000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003511011202503140011', 'id': 25557856503326, 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF0000004003832011202503130005', 'id': 25702031464030, 'amount_excel': 100000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02001516011202503140024', 'id': 25857869021116, 'amount_excel': 10000.0, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'XYZ456', 'id': 2, 'amount_excel': nan, 'amount_db': 200.0, 'Mismatch Reason': 'Only in DB'}]
+2025-03-22 12:40:50,538 - INFO - Sending reconciliation data as JSON response.
+2025-03-22 12:40:50,540 - INFO - 127.0.0.1 - - [22/Mar/2025 12:40:50] "POST /reconcile HTTP/1.1" 200 -
+2025-03-22 12:41:47,141 - INFO -  * Detected change in 'D:\\reconciliations\\app.py', reloading
+2025-03-22 12:41:47,223 - INFO -  * Restarting with stat
+2025-03-22 12:41:49,095 - INFO - Starting Flask app.
+2025-03-22 12:41:49,118 - WARNING -  * Debugger is active!
+2025-03-22 12:41:49,124 - INFO -  * Debugger PIN: 813-101-750
+2025-03-22 12:42:11,328 - INFO - Received request to reconcile transactions.
+2025-03-22 12:42:11,329 - INFO - Request data: {'db_data': '[\n    {\n        "id": 298074589672,\n        "reference": "IGF02002520011202503130003",\n        "amount": 10000.00\n    },\n    {\n        "id": 2,\n        "reference": "XYZ456",\n        "amount": 200.00\n    }\n]\n'}
+2025-03-22 12:42:11,329 - INFO - Request files: {'file': <FileStorage: 'BF_francis.samkyi41742470057813.xlsx' ('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')>}
+2025-03-22 12:42:11,329 - INFO - Starting reconciliation process.
+2025-03-22 12:42:11,333 - INFO - File uploaded and saved as C:\Users\ERICK~1.MAK\AppData\Local\Temp\tmpzvik3jvq\uploaded_transactions_4968e3fe-2352-454a-b3eb-f5623ce2dfcbBF_francis.samkyi41742470057813.xlsx.
+2025-03-22 12:42:11,799 - INFO - Excel file loaded into a DataFrame.
+2025-03-22 12:42:11,800 - INFO - Filtered Excel data to include only required columns.
+2025-03-22 12:42:11,800 - INFO - Loaded DB data into a DataFrame.
+2025-03-22 12:42:11,805 - INFO - Merged Excel and DB data.
+2025-03-22 12:42:11,806 - INFO - Identified 0 mismatches based on amount.
+2025-03-22 12:42:11,807 - INFO - Separated unmatched records: 11 in Excel, 1 in DB.
+2025-03-22 12:42:11,807 - INFO - Concatenated results into final reconciliation DataFrame.
+2025-03-22 12:42:11,811 - INFO - Reconciled data: [{'amount_excel': 10000.0, 'id': 298074589672, 'reference': 'IGF02002520011202503130003', 'amount_db': 10000.0, '_merge': 'both'}]
+2025-03-22 12:42:11,811 - INFO - Unreconciled data: [{'amount_excel': 10000.0, 'id': 298927584062, 'reference': 'IGF02001516011202503050008', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 100000.0, 'id': 582318611839, 'reference': 'IGF02003511011202503070004', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 1000.0, 'id': 590874450638, 'reference': '02002342890', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 900000.0, 'id': 790216143373, 'reference': 'IGF02003349011202503050003', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 10000.0, 'id': 790227039823, 'reference': 'IGF02001516011202503060004', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 100000.0, 'id': 857831996851, 'reference': 'IGF0000004003832011202503130006', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 100000.0, 'id': 882358885619, 'reference': 'IGF02003511011202502280010', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 50000.0, 'id': 25482457859069, 'reference': 'IGF02003750011202503130007', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 100000.0, 'id': 25557856503326, 'reference': 'IGF02003511011202503140011', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 100000.0, 'id': 25702031464030, 'reference': 'IGF0000004003832011202503130005', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': 10000.0, 'id': 25857869021116, 'reference': 'IGF02001516011202503140024', 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'amount_excel': nan, 'id': 2, 'reference': 'XYZ456', 'amount_db': 200.0, 'Mismatch Reason': 'Only in DB'}]
+2025-03-22 12:42:11,811 - INFO - Sending reconciliation data as JSON response.
+2025-03-22 12:42:11,812 - INFO - 127.0.0.1 - - [22/Mar/2025 12:42:11] "POST /reconcile HTTP/1.1" 200 -
+2025-03-22 12:44:35,774 - INFO -  * Detected change in 'D:\\reconciliations\\app.py', reloading
+2025-03-22 12:44:35,858 - INFO -  * Restarting with stat
+2025-03-22 12:44:37,482 - INFO - Starting Flask app.
+2025-03-22 12:44:37,508 - WARNING -  * Debugger is active!
+2025-03-22 12:44:37,515 - INFO -  * Debugger PIN: 813-101-750
+2025-03-22 12:44:37,589 - INFO - Received request to reconcile transactions.
+2025-03-22 12:44:37,589 - INFO - Request method: POST
+2025-03-22 12:44:37,589 - INFO - Request headers: Content-Type: multipart/form-data; boundary=--------------------------859119624511906756446586
+Accept: */*
+User-Agent: PostmanRuntime/7.43.2
+Cache-Control: no-cache
+Postman-Token: 50b92f2a-1e49-4b73-be3b-5df2edce1868
+Host: localhost:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 10815
+
+
+2025-03-22 12:44:37,589 - INFO - Request content type: multipart/form-data; boundary=--------------------------859119624511906756446586
+2025-03-22 12:44:37,589 - INFO - Request content length: 10815
+2025-03-22 12:44:37,589 - INFO - Request: <Request 'http://localhost:5000/reconcile' [POST]>
+2025-03-22 12:44:37,590 - INFO - Request data: {'db_data': '[\n    {\n        "id": 298074589672,\n        "reference": "IGF02002520011202503130003",\n        "amount": 10000.00\n    },\n    {\n        "id": 2,\n        "reference": "XYZ456",\n        "amount": 200.00\n    }\n]\n'}
+2025-03-22 12:44:37,590 - INFO - Request files: {'file': <FileStorage: 'BF_francis.samkyi41742470057813.xlsx' ('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')>}
+2025-03-22 12:44:37,590 - INFO - Starting reconciliation process.
+2025-03-22 12:44:37,598 - INFO - File uploaded and saved as C:\Users\ERICK~1.MAK\AppData\Local\Temp\tmpukv020m1\uploaded_transactions_7eeddd1a-d979-4d69-9a2e-ad7dd334485dBF_francis.samkyi41742470057813.xlsx.
+2025-03-22 12:44:38,148 - INFO - Excel file loaded into a DataFrame.
+2025-03-22 12:44:38,149 - INFO - Filtered Excel data to include only required columns.
+2025-03-22 12:44:38,149 - INFO - Loaded DB data into a DataFrame.
+2025-03-22 12:44:38,153 - INFO - Merged Excel and DB data.
+2025-03-22 12:44:38,153 - INFO - Identified 0 mismatches based on amount.
+2025-03-22 12:44:38,154 - INFO - Separated unmatched records: 11 in Excel, 1 in DB.
+2025-03-22 12:44:38,154 - INFO - Concatenated results into final reconciliation DataFrame.
+2025-03-22 12:44:38,158 - INFO - Reconciled data: [{'reference': 'IGF02002520011202503130003', 'amount_excel': 10000.0, 'id': 298074589672, 'amount_db': 10000.0, '_merge': 'both'}]
+2025-03-22 12:44:38,158 - INFO - Unreconciled data: [{'reference': 'IGF02001516011202503050008', 'amount_excel': 10000.0, 'id': 298927584062, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003511011202503070004', 'amount_excel': 100000.0, 'id': 582318611839, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': '02002342890', 'amount_excel': 1000.0, 'id': 590874450638, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003349011202503050003', 'amount_excel': 900000.0, 'id': 790216143373, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02001516011202503060004', 'amount_excel': 10000.0, 'id': 790227039823, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF0000004003832011202503130006', 'amount_excel': 100000.0, 'id': 857831996851, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003511011202502280010', 'amount_excel': 100000.0, 'id': 882358885619, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003750011202503130007', 'amount_excel': 50000.0, 'id': 25482457859069, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02003511011202503140011', 'amount_excel': 100000.0, 'id': 25557856503326, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF0000004003832011202503130005', 'amount_excel': 100000.0, 'id': 25702031464030, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'IGF02001516011202503140024', 'amount_excel': 10000.0, 'id': 25857869021116, 'amount_db': nan, 'Mismatch Reason': 'Only in Excel'}, {'reference': 'XYZ456', 'amount_excel': nan, 'id': 2, 'amount_db': 200.0, 'Mismatch Reason': 'Only in DB'}]
+2025-03-22 12:44:38,158 - INFO - Sending reconciliation data as JSON response.
+2025-03-22 12:44:38,159 - INFO - 127.0.0.1 - - [22/Mar/2025 12:44:38] "POST /reconcile HTTP/1.1" 200 -
